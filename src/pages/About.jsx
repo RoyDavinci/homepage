@@ -91,9 +91,14 @@ export const About = () => {
 					<p className='text-white mt-2'>Scan to Download</p>
 					<img src={Arrow} alt='' className='w-16 sm:w-20 lg:w-24 mt-2' />
 				</div>
+				<div className='absolute lg:top-96 md:block lg:block hidden right-4 bg-[#FEF595] p-2 rounded-full'>
+					<IconButton aria-label='message'>
+						<MessageIcon color='black' />
+					</IconButton>
+				</div>
 
-				{/* Message Icon on the Right */}
-				<div className='absolute right-4 md:top-64 lg:block sm:hidden md:hidden sm:bottom-0 lg:top-80 bg-[#FEF595] p-2 rounded-full'>
+				{/* For Small Screens (Bottom Positioned) */}
+				<div className='absolute bottom-12 md:hidden lg:hidden block right-4 bg-[#FEF595] p-2 rounded-full'>
 					<IconButton aria-label='message'>
 						<MessageIcon color='black' />
 					</IconButton>
