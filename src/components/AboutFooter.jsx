@@ -11,14 +11,15 @@ const AboutFooter = () => {
 			</div>
 			<div className='flex flex-col md:flex-row justify-between items-center'>
 				{/* Left Section: Logo and Social Media Icons */}
-				<div className='flex flex-col items-center md:items-start'>
+				<div className='flex flex-col items-center md:items-start flex-1'>
 					{/* Logo */}
 					<img src={Logo} alt='Logo' className='mb-4 ' />
 
 					{/* Description */}
-					<p className='text-center md:text-left mb-4'>
-						Our payment app provides seamless and secure transactions, making
-						your life easier.
+					<p className='text-center md:text-left mb-4 text-[#828282] lg:w-[40%] w-[90%]'>
+						From everyday transactions to major purchases, PayIT brings the
+						power of unlimited possibilities to your fingertips. Wherever life
+						takes you, PayIT has you covered.
 					</p>
 
 					{/* Social Media Icons */}

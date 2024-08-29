@@ -14,7 +14,13 @@ export const Started = () => {
 						security of PayIT. Download the app today and unlock a world of
 						possibilities
 					</p>
-					<button className='flex items-center px-4 py-2 rounded-full text-black bg-[#FEF595] my-4'>
+					<button
+						className='flex items-center px-4 py-2 rounded-full text-black my-4'
+						style={{
+							background:
+								"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+						}}
+					>
 						<FaAndroid /> <FaApple /> <span>Download the App</span>
 					</button>
 				</div>

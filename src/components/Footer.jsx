@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import Logo from "../assets/payit/ATS.png";
 
 const Footer = () => {
 	return (
@@ -8,7 +9,8 @@ const Footer = () => {
 				<div className='flex flex-col md:flex-row md:justify-between'>
 					{/* First Item: Logo */}
 					<div className='mb-8 md:mb-0'>
-						<h1 className='text-2xl font-bold'>Logo</h1>
+						{/* <h1 className='text-2xl font-bold'>Logo</h1> */}
+						<img src={Logo} alt='' />
 					</div>
 
 					{/* Second Item: Quick Links */}

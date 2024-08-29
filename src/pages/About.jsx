@@ -1,13 +1,10 @@
-import React from "react";
-import IconButton from "@mui/material/IconButton";
+import React, { useEffect } from "react";
 import MessageIcon from "@mui/icons-material/Message";
 import { FaApple, FaAndroid } from "react-icons/fa";
 import AboutSection from "../components/AboutSection";
 import Testimonial from "../components/Testimonials";
 import image from "../assets/payit/imag37.png";
-import CenteredImageLayout from "../components/CenteredImage";
-import { Started } from "../components/Started";
-import { Button } from "@mui/material";
+import { useLocation } from "react-router-dom";
 import AppleIcon from "@mui/icons-material/Apple";
 import AndroidIcon from "@mui/icons-material/Android";
 import Logo from "../assets/payit/Group 30910.png";
@@ -17,6 +14,11 @@ import Icon from "../assets/payit/Untitled.png";
 import Image8 from "../assets/payit/image8.png";
 
 export const About = () => {
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
 	return (
 		<div>
 			{/* <div className='relative flex flex-col items-center justify-center  bg-black px-4 '>
@@ -72,7 +74,13 @@ export const About = () => {
 				</p>
 
 				{/* Download Button */}
-				<button className='flex items-center justify-center bg-[#FEF595] my-4 sm:my-6 lg:my-8 text-gray-800 text-sm sm:text-base lg:text-lg py-3 sm:py-4 lg:py-5 px-6 sm:px-8 lg:px-10 rounded-full shadow-md hover:shadow-lg transition duration-300'>
+				<button
+					className='flex items-center justify-center my-4 sm:my-6 lg:my-8 text-gray-800 text-sm sm:text-base lg:text-lg py-3 sm:py-4 lg:py-5 px-6 sm:px-8 lg:px-10 rounded-full shadow-md hover:shadow-lg transition duration-300'
+					style={{
+						background:
+							"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+					}}
+				>
 					<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
 					<FaAndroid className='text-lg sm:text-xl lg:text-2xl mr-2' />
 					<span>Download the App</span>
@@ -91,17 +99,25 @@ export const About = () => {
 					<p className='text-white mt-2'>Scan to Download</p>
 					<img src={Arrow} alt='' className='w-16 sm:w-20 lg:w-24 mt-2' />
 				</div>
-				<div className='absolute lg:top-96 md:block lg:block hidden right-4 bg-[#FEF595] p-2 rounded-full'>
-					<IconButton aria-label='message'>
-						<MessageIcon color='black' />
-					</IconButton>
+				<div
+					className='absolute lg:top-96 md:block lg:block hidden right-4 p-2 rounded-full'
+					style={{
+						background:
+							"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+					}}
+				>
+					<MessageIcon className='text-xl text-black' />
 				</div>
 
 				{/* For Small Screens (Bottom Positioned) */}
-				<div className='absolute bottom-12 md:hidden lg:hidden block right-4 bg-[#FEF595] p-2 rounded-full'>
-					<IconButton aria-label='message'>
-						<MessageIcon color='black' />
-					</IconButton>
+				<div
+					className='absolute bottom-12 md:hidden lg:hidden block right-4 p-2 rounded-full'
+					style={{
+						background:
+							"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+					}}
+				>
+					<MessageIcon className='text-xl text-black' />
 				</div>
 			</div>
 
@@ -131,7 +147,13 @@ export const About = () => {
 						that your transactions are not only convenient but also safe.
 					</p>
 					<div>
-						<button className='flex items-center p-4 my-4 bg-[#FEF595] rounded-full'>
+						<button
+							className='flex items-center p-4 my-4  rounded-full'
+							style={{
+								background:
+									"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+							}}
+						>
 							<AppleIcon sx={{ marginLeft: "4px" }} />
 							<AndroidIcon sx={{ marginLeft: "4px" }} />{" "}
 							<span className='ml-4'>Download the App</span>
