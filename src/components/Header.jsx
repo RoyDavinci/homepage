@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { FaBars, FaChevronDown, FaEnvelope } from "react-icons/fa";
+import Logo from "../assets/payit/Group 30910.png";
+import Background from "../assets/payit/Desktop4.jpg";
+import "./styles.css";
 
 const Header = () => {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -14,18 +17,23 @@ const Header = () => {
 	};
 
 	return (
-		<header className='h-screen bg-[#0C0C0C]'>
+		<header
+			// className='h-screen'
+			// style={{
+			// 	backgroundImage: `url('../assets/payit/Desktop4.jpg')`,
+			// 	backgroundPosition: "center",
+			// 	backgroundSize: "cover",
+			// 	backgroundRepeat: "no-repeat",
+			// }}
+			className='header'
+		>
 			<div className='w-full  text-white shadow-md p-4 flex items-center justify-between relative'>
 				<div className='text-xl font-bold'>
-					<img
-						src='/path/to/logo.png'
-						alt='Logo'
-						className='h-8 inline-block'
-					/>
+					<img src={Logo} alt='Logo' className='h-8 inline-block' />
 				</div>
 
 				{/* Center items for larger screens */}
-				<nav className='hidden md:flex space-x-8'>
+				<nav className='hidden md:flex space-x-8 '>
 					<div className='cursor-pointer hover:underline text-white '>
 						Company
 					</div>
@@ -112,7 +120,7 @@ const Header = () => {
 			{/* Logo on the left */}
 
 			{/* Hero Section */}
-			<section className='flex-1 flex items-center h-full bg-[#0C0C0C] justify-center relative text-center p-8'>
+			<section className='flex-1 flex items-center h-full justify-center relative text-center p-8'>
 				<div className='w-full md:w-3/5 text-center'>
 					<h1 className='text-4xl md:text-6xl font-bold mb-8 text-white '>
 						Empowering individuals and business with Cutting-Edge solutions
