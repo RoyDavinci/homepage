@@ -1,14 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CenteredSectionWithGrid = () => {
 	return (
 		<section className='py-16 px-4 md:px-16 bg-white'>
 			{/* Centered Content */}
 			<div className='max-w-3xl mx-auto text-center mb-16'>
-				<button className='bg-[#E6EFFE] mb-4 text-[#0C61F0] py-3 px-6 rounded-lg text-lg md:text-xl transition'>
+				<Link
+					to='/about'
+					className='bg-[#E6EFFE] mb-4 text-[#0C61F0] py-3 px-6 rounded-lg text-lg md:text-xl transition'
+				>
 					HOW IT WORKS
-				</button>
-				<h2 className='text-3xl md:text-5xl font-bold mb-4'>
+				</Link>
+				<h2 className='text-3xl mt-12 md:text-5xl font-bold mb-4'>
 					Empowering Business With Bespoke Solutions
 				</h2>
 			</div>

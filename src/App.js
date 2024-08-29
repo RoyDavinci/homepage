@@ -1,20 +1,26 @@
 import "./App.css";
-import CenteredSectionWithGrid from "./components/CenteredSection";
-import CustomSection from "./components/CustomSection";
-import FeaturesSection from "./components/FeatureSection";
-import FAQSection from "./components/FAQ";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+// import { Home, Error } from "./pages";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { About, Error, Home } from "./pages";
 
 function App() {
+	const router = createBrowserRouter([
+		{
+			path: "/",
+			element: <Home />,
+		},
+		{
+			path: "*",
+			element: <Error />,
+		},
+		{
+			path: "/about",
+			element: <About />,
+		},
+	]);
 	return (
 		<div className='App'>
-			<Header />
-			<FeaturesSection />
-			<CustomSection />
-			<CenteredSectionWithGrid />
-			<FAQSection />
-			<Footer />
+			<RouterProvider router={router} />
 		</div>
 	);
 }

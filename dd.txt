@@ -1,0 +1,21 @@
+[2024-08-28 14:31:11] local.INFO: array (
+  'serviceCode' => 'ADA',
+  'msisdn' => '2347066216877',
+  'product_id' => 'MT251',
+  'request_id' => '1701001404MTN28082024022831',
+  'network' => 'MTN',
+  'incoming_IP' => '102.211.163.143',
+) 
+
+
+[2024-08-28 00:00:08] local.INFO: array (
+  'msisdn' => '2349040255051',
+  'amount' => '100.00',
+  'request_id' => '280824000007004497244866',
+  'serviceCode' => 'ADA',
+  'product_id' => 'AI2',
+  'incoming_IP' => '198.18.8.48',
+)  
+
+
+// 447776640989

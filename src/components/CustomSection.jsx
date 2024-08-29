@@ -1,6 +1,7 @@
 import { FaShoppingCart, FaUser, FaRocket, FaHeart } from "react-icons/fa";
 
 import Image from "../assets/Rectangle 6387.png";
+import { Link } from "react-router-dom";
 
 const CustomSection = () => {
 	return (
@@ -9,10 +10,13 @@ const CustomSection = () => {
 			<div className='flex flex-col md:flex-row justify-between items-center mb-16'>
 				{/* First Item */}
 				<div className='mb-8 md:mb-0 md:mr-8 flex-1'>
-					<button className='bg-[#E6EFFE] mb-4 text-[#0C61F0] py-3 px-6 rounded-lg text-lg md:text-xl transition'>
+					<Link
+						to='/about'
+						className='bg-[#E6EFFE] mb-4 text-[#0C61F0] py-3 px-6 rounded-lg text-lg md:text-xl transition'
+					>
 						What We Do
-					</button>
-					<h2 className='text-2xl md:text-4xl font-bold '>
+					</Link>
+					<h2 className='text-2xl mt-12 md:text-4xl font-bold '>
 						Driving Innovation through Collaboration
 					</h2>
 				</div>

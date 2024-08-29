@@ -1,14 +1,18 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const FeaturesSection = () => {
 	return (
 		<section className='py-16 md:px-0 px-10 bg-gray-50 my-28 justify-center flex flex-col items-center'>
 			{/* Centered Button */}
 			<div className='text-center mb-8'>
-				<button className='bg-[#E6EFFE] text-[#0C61F0] py-3 px-6 rounded-lg text-lg md:text-xl transition'>
+				<Link
+					to='/about'
+					className='bg-[#E6EFFE] text-[#0C61F0] py-3 px-6 rounded-lg text-lg md:text-xl transition'
+				>
 					Why Choose Us?
-				</button>
+				</Link>
 			</div>
 
 			{/* Centered Big Text and Subtext */}

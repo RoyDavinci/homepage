@@ -115,7 +115,7 @@ const Header = () => {
 			<section className='flex-1 flex items-center h-full bg-[#0C0C0C] justify-center relative text-center p-8'>
 				<div className='w-full md:w-3/5 text-center'>
 					<h1 className='text-4xl md:text-6xl font-bold mb-8 text-white '>
-						Empowering business and individuals with Cutting-Edge solutions
+						Empowering individuals and business with Cutting-Edge solutions
 					</h1>
 					<p className='text-xl md:text-2xl mb-12 text-white '>
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
