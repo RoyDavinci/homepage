@@ -2,5 +2,5 @@
 	height: 100vh; /* Full viewport height */
 	background-image: url("../assets/payit/Desktop4.jpg");
 	background-size: cover; /* Cover the entire header */
-	background-position: center; /* Center the background image */
+	background-position: center center; /* Center the background image */
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import Logo from "../assets/payit/ATS.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -18,19 +19,19 @@ const Footer = () => {
 						<h3 className=' font-semibold mb-4 text-[#A2A2A2]'>Quick Links</h3>
 						<ul>
 							<li className='mb-2'>
-								<a href='#' className='hover:underline'>
+								<Link to='#' className='hover:underline'>
 									Company
-								</a>
+								</Link>
 							</li>
 							<li className='mb-2'>
-								<a href='#' className='hover:underline'>
+								<Link to='#' className='hover:underline'>
 									Products
-								</a>
+								</Link>
 							</li>
 							<li className='mb-2'>
-								<a href='#' className='hover:underline'>
+								<Link to='#' className='hover:underline'>
 									Book a Demo
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -40,14 +41,14 @@ const Footer = () => {
 						<h3 className=' font-semibold mb-4 text-[#A2A2A2]'>Explore</h3>
 						<ul>
 							<li className='mb-2'>
-								<a href='#' className='hover:underline'>
+								<Link to='#' className='hover:underline'>
 									PayIt
-								</a>
+								</Link>
 							</li>
 							<li className='mb-2'>
-								<a href='#' className='hover:underline'>
+								<Link to='#' className='hover:underline'>
 									Blog
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -57,9 +58,9 @@ const Footer = () => {
 						<h3 className=' font-semibold mb-4 text-[#A2A2A2]'>Company</h3>
 						<ul>
 							<li className='mb-2'>
-								<a href='#' className='hover:underline'>
+								<Link to='/contact-us' className='hover:underline'>
 									Contact Us
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -70,32 +71,32 @@ const Footer = () => {
 					<div className='flex flex-col md:flex-row md:items-center  mb-4 md:mb-0'>
 						<ul className='flex flex-col md:flex-row'>
 							<li className='mb-2 md:mb-0 md:mr-6 text-[#A3A3A3]'>
-								<a href='#' className='hover:underline'>
+								<Link to='#' className='hover:underline'>
 									Copyright
-								</a>
+								</Link>
 							</li>
 							<li className='mb-2 md:mb-0 md:mr-6 text-[#A3A3A3]'>
-								<a href='#' className='hover:underline'>
+								<Link to='#' className='hover:underline'>
 									Privacy Policy
-								</a>
+								</Link>
 							</li>
 							<li className='mb-2 md:mb-0 text-[#A3A3A3]'>
-								<a href='#' className='hover:underline'>
+								<Link to='#' className='hover:underline'>
 									Terms of Service
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
 					<div className='flex items-center space-x-4'>
-						<a href='#' className='text-[#A6A6A6] '>
+						<Link to='#' className='text-[#A6A6A6] '>
 							<FaFacebookF size={20} />
-						</a>
-						<a href='#' className='text-[#A6A6A6] '>
+						</Link>
+						<Link to='#' className='text-[#A6A6A6] '>
 							<FaInstagram size={20} />
-						</a>
-						<a href='#' className='text-[#A6A6A6] '>
+						</Link>
+						<Link to='#' className='text-[#A6A6A6] '>
 							<FaYoutube size={20} />
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

@@ -18,16 +18,7 @@ const Header = () => {
 	};
 
 	return (
-		<header
-			// className='h-screen'
-			// style={{
-			// 	backgroundImage: `url('../assets/payit/Desktop4.jpg')`,
-			// 	backgroundPosition: "center",
-			// 	backgroundSize: "cover",
-			// 	backgroundRepeat: "no-repeat",
-			// }}
-			className='header'
-		>
+		<header className='header'>
 			<div className='w-full  text-white shadow-md p-4 flex items-center justify-between relative'>
 				<div className='text-xl font-bold'>
 					<img src={Logo} alt='Logo' className='h-8 inline-block' />
@@ -140,7 +131,7 @@ const Header = () => {
 				</div>
 
 				{/* Message Icon */}
-				<div className='absolute md:bottom-24 bottom-8 right-4'>
+				<div className='absolute bottom-24  right-4'>
 					<button className='bg-[#F9B141] p-4 rounded-full shadow-lg hover:bg-[#F9B141] transition'>
 						<FaEnvelope className='text-black h-6 w-6' />
 					</button>
