@@ -3,6 +3,7 @@ import { FaBars, FaChevronDown, FaEnvelope } from "react-icons/fa";
 import Logo from "../assets/payit/Group 30910.png";
 import Background from "../assets/payit/Desktop4.jpg";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -62,9 +63,12 @@ const Header = () => {
 						)}
 					</div>
 
-					<div className='cursor-pointer hover:underline text-white '>
+					<Link
+						to='/contact-us'
+						className='cursor-pointer hover:underline text-white '
+					>
 						Contact Us
-					</div>
+					</Link>
 				</nav>
 
 				{/* Button on the right */}

@@ -21,39 +21,6 @@ export const About = () => {
 	}, [pathname]);
 	return (
 		<div>
-			{/* <div className='relative flex flex-col items-center justify-center  bg-black px-4 '>
-				<img src={Logo} alt='Logo' className=' my-10' />
-
-				<h1 className='text-4xl font-bold text-center text-white mb-4'>
-					Seamless payments unlimited possibilities
-				</h1>
-
-				<p className='text-lg text-center text-[#626262]'>
-					Experience the future of payments with PayIT- your all in one secure
-					app for fast secure and effortless transactions.
-				</p>
-				<button className='flex items-center justify-center bg-[#FEF595] my-4 text-gray-800 text-sm py-4 px-4 rounded-full shadow-md hover:shadow-lg transition duration-300'>
-					<FaApple className='text-xl mr-2' />
-
-					<FaAndroid className='text-xl mr-2' />
-
-					<span>Download the App</span>
-				</button>
-
-				<img src={image} alt='Bottom Image' className='' />
-				<div className='absolute right-6 bottom-60'>
-					<img src={Icon} alt='' className='w-36' />
-					<p className='text-white'>Scan to Download</p>
-					<img src={Arrow} alt='' />
-				</div>
-
-				<div className='absolute right-4 top-80 bg-[#FEF595] p-2 rounded-full'>
-					<IconButton aria-label='message' color='#000'>
-						<MessageIcon color='black' />
-					</IconButton>
-				</div>
-			</div> */}
-
 			<div className='relative flex flex-col items-center justify-center bg-black px-4 sm:px-8 lg:px-16 py-8 sm:py-12 lg:py-16'>
 				{/* Logo */}
 				<img
