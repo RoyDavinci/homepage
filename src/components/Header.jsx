@@ -41,15 +41,24 @@ const Header = () => {
 						</div>
 						{dropdownOpen && (
 							<div className='absolute left-0 mt-2 w-48  text-black rounded-lg shadow-lg z-10'>
-								<div className='p-2 hover:bg-gray-200 text-white cursor-pointer'>
+								<Link
+									to='/products'
+									className='p-2 hover:bg-gray-200 text-white cursor-pointer'
+								>
 									Child 1
-								</div>
-								<div className='p-2 hover:bg-gray-200 text-white  cursor-pointer'>
+								</Link>
+								<Link
+									to='/products'
+									className='p-2 hover:bg-gray-200 text-white  cursor-pointer'
+								>
 									Child 2
-								</div>
-								<div className='p-2 hover:bg-gray-200 text-white  cursor-pointer'>
+								</Link>
+								<Link
+									to='/products'
+									className='p-2 hover:bg-gray-200 text-white  cursor-pointer'
+								>
 									Child 3
-								</div>
+								</Link>
 							</div>
 						)}
 					</div>
@@ -95,15 +104,24 @@ const Header = () => {
 							</div>
 							{dropdownOpen && (
 								<div className='mt-2 text-white  rounded-lg shadow-lg z-10'>
-									<div className='p-2 hover:bg-gray-200 text-white  cursor-pointer'>
+									<Link
+										to='/products'
+										className='p-2 hover:bg-gray-200 text-white  cursor-pointer'
+									>
 										Child 1
-									</div>
-									<div className='p-2 text-white  hover:bg-gray-200 cursor-pointer'>
+									</Link>
+									<Link
+										to='/products'
+										className='p-2 text-white  hover:bg-gray-200 cursor-pointer'
+									>
 										Child 2
-									</div>
-									<div className='p-2 text-white  hover:bg-gray-200 cursor-pointer'>
+									</Link>
+									<Link
+										to='/products'
+										className='p-2 text-white  hover:bg-gray-200 cursor-pointer'
+									>
 										Child 3
-									</div>
+									</Link>
 								</div>
 							)}
 						</div>
