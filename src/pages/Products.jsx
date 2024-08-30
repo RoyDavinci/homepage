@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
 	FaApple,
 	FaAndroid,
@@ -11,8 +11,14 @@ import {
 	FaWallet,
 } from "react-icons/fa";
 import Footer from "../components/Footer";
+import { useLocation } from "react-router-dom";
 
 function FintechLandingPage() {
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
 	return (
 		<div className='min-h-screen bg-white'>
 			{/* Hero Section */}

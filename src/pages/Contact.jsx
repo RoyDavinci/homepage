@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 function ContactUs() {
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
 	return (
 		<div className='min-h-screen bg-gradient-to-br from-FFF38B to-A9E1FF flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8'>
 			{/* Header */}

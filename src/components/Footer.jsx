@@ -11,7 +11,9 @@ const Footer = () => {
 					{/* First Item: Logo */}
 					<div className='mb-8 md:mb-0'>
 						{/* <h1 className='text-2xl font-bold'>Logo</h1> */}
-						<img src={Logo} alt='' />
+						<Link to='/'>
+							<img src={Logo} alt='' />
+						</Link>
 					</div>
 
 					{/* Second Item: Quick Links */}

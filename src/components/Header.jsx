@@ -43,22 +43,22 @@ const Header = () => {
 							<div className='absolute left-0 mt-2 w-48  text-black rounded-lg shadow-lg z-10'>
 								<Link
 									to='/products'
-									className='p-2 hover:bg-gray-200 text-white cursor-pointer'
+									className='p-2 block hover:bg-gray-200 text-white cursor-pointer'
 								>
-									Child 1
+									PayIT
 								</Link>
 								<Link
 									to='/products'
-									className='p-2 hover:bg-gray-200 text-white  cursor-pointer'
+									className='p-2 block hover:bg-gray-200 text-white  cursor-pointer'
 								>
-									Child 2
+									SchoolIT
 								</Link>
-								<Link
+								{/* <Link
 									to='/products'
-									className='p-2 hover:bg-gray-200 text-white  cursor-pointer'
+									className='p-2 block hover:bg-gray-200 text-white  cursor-pointer'
 								>
 									Child 3
-								</Link>
+								</Link> */}
 							</div>
 						)}
 					</div>
@@ -106,22 +106,22 @@ const Header = () => {
 								<div className='mt-2 text-white  rounded-lg shadow-lg z-10'>
 									<Link
 										to='/products'
-										className='p-2 hover:bg-gray-200 text-white  cursor-pointer'
+										className='p-2 block hover:bg-gray-200 text-white  cursor-pointer'
 									>
-										Child 1
+										PayIT
 									</Link>
 									<Link
 										to='/products'
-										className='p-2 text-white  hover:bg-gray-200 cursor-pointer'
+										className='p-2 block text-white  hover:bg-gray-200 cursor-pointer'
 									>
-										Child 2
+										SchoolIT
 									</Link>
-									<Link
+									{/* <Link
 										to='/products'
-										className='p-2 text-white  hover:bg-gray-200 cursor-pointer'
+										className='p-2 block text-white  hover:bg-gray-200 cursor-pointer'
 									>
 										Child 3
-									</Link>
+									</Link> */}
 								</div>
 							)}
 						</div>
@@ -143,17 +143,20 @@ const Header = () => {
 						beatae dolorem et deserunt magnam qui vel sapiente esse autem
 						mollitia.
 					</p>
-					<button className='bg-[#F9B141] text-black py-3 px-6 rounded-lg text-lg md:text-xl hover:bg-[#F9B141] transition'>
-						Get Started
-					</button>
+					<div className='flex items-center justify-center gap-8'>
+						<button className='bg-[#F9B141] text-black py-3 px-6 rounded-lg text-lg md:text-xl hover:bg-[#F9B141] transition'>
+							Get Started
+						</button>
+						<div>
+							<button className='bg-[#F9B141] p-4 rounded-full shadow-lg hover:bg-[#F9B141] transition'>
+								<FaEnvelope className='text-black h-6 w-6' />
+							</button>
+						</div>
+					</div>
 				</div>
 
 				{/* Message Icon */}
-				<div className='absolute bottom-24  right-4'>
-					<button className='bg-[#F9B141] p-4 rounded-full shadow-lg hover:bg-[#F9B141] transition'>
-						<FaEnvelope className='text-black h-6 w-6' />
-					</button>
-				</div>
+				{/* <div className='absolute bottom-24  right-4'></div> */}
 			</section>
 		</header>
 	);
