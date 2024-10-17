@@ -12,6 +12,10 @@ import AboutFooter from "../components/AboutFooter";
 import Arrow from "../assets/payit/Arrow_05.png";
 import Icon from "../assets/payit/Untitled.png";
 import Image8 from "../assets/payit/image8.png";
+import PayITSection from "../components/PayIt";
+import GetStartedSteps from "../components/GetStarted";
+import CustomSection from "../components/CustomSection";
+import CenteredSectionWithGrid from "../components/CenteredSection";
 
 export const About = () => {
 	const { pathname } = useLocation();
@@ -37,58 +41,72 @@ export const About = () => {
 				/>
 
 				{/* Title */}
-				<h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white mb-2 sm:mb-4 lg:mb-6'>
-					Empowering You with Fast, Smarter, and Seamless Solutions
-				</h1>
-
-				{/* Subtitle */}
-				<p className='text-base sm:text-lg lg:text-xl text-center text-[#626262] mb-4 sm:mb-6 lg:mb-8'>
-					PayIT, one of the Top Payment Apps in Africa, is designed to provide
-					You with intelligent, secure, and personalized financial services.
-					Whether You’re buying airtime or data, paying bills, transferring
-					money, or managing Your expenses, PayIT leverages AI-driven technology
-					to deliver a seamless and enjoyable experience every time.
-				</p>
+				<div className='max-w-2xl mx-auto px-4'>
+					{" "}
+					{/* Container to limit width and center the content */}
+					<h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white mb-2 sm:mb-4 lg:mb-6'>
+						Empowering You with Fast, Smarter, and Seamless Solutions
+					</h1>
+					{/* Subtitle */}
+					<p className='text-base sm:text-lg lg:text-xl text-center text-[#626262] mb-4 sm:mb-6 lg:mb-8'>
+						PayIT, one of the Top Payment Apps in Africa, is designed to provide
+						You with intelligent, secure, and personalized financial services.
+						Whether You’re buying airtime or data, paying bills, transferring
+						money, or managing Your expenses, PayIT leverages AI-driven
+						technology to deliver a seamless and enjoyable experience every
+						time.
+					</p>
+				</div>
 
 				{/* Download Button */}
-				<button
-					className='flex items-center justify-center my-4 sm:my-6 lg:my-8 text-gray-800 text-sm sm:text-base lg:text-lg py-3 sm:py-4 lg:py-5 px-6 sm:px-8 lg:px-10 rounded-full shadow-md hover:shadow-lg transition duration-300'
-					style={{
-						background:
-							"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)", // Keep the original gradient
-					}}
-					onClick={toggleDropdowns}
-				>
-					<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
-					<FaAndroid className='text-lg sm:text-xl lg:text-2xl mr-2' />
-					<span>Download the App</span>
-				</button>
 
-				{/* Render dropdown below the button */}
-				{isOpen && (
-					<div className='mt-2 w-48 bg-white rounded-md shadow-lg'>
-						<a
-							href='#'
-							target='_blank'
-							rel='noopener noreferrer'
-							className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
-							onClick={() => setIsOpen(false)}
-						>
-							iOS
-						</a>
-						<a
-							href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
-							target='_blank'
-							rel='noopener noreferrer'
-							className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
-							onClick={() => setIsOpen(false)}
-						>
-							Android
-						</a>
+				<div>
+					<button
+						className='flex items-center justify-center my-4 sm:my-6 lg:my-8 text-gray-800 text-sm sm:text-base lg:text-lg py-3 sm:py-4 lg:py-5 px-6 sm:px-8 lg:px-10 rounded-full shadow-md hover:shadow-lg transition duration-300'
+						style={{
+							background:
+								"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+						}}
+						onClick={toggleDropdowns}
+					>
+						<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
+						<FaAndroid className='text-lg sm:text-xl lg:text-2xl mr-2' />
+						<span>Download the App</span>
+					</button>
+
+					{isOpen && (
+						<div className='mt-2 w-48 bg-white rounded-md shadow-lg'>
+							<a
+								href='#'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
+								onClick={() => setIsOpen(false)}
+							>
+								iOS
+							</a>
+							<a
+								href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
+								onClick={() => setIsOpen(false)}
+							>
+								Android
+							</a>
+						</div>
+					)}
+					<div
+						className=' md:block lg:block hidden right-4 p-2 rounded-full'
+						style={{
+							background:
+								"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+						}}
+					>
+						<MessageIcon className='text-xl text-black' />
 					</div>
-				)}
+				</div>
 
-				{/* Image at the Bottom */}
 				<img
 					src={image}
 					alt='Bottom Image'
@@ -100,15 +118,6 @@ export const About = () => {
 					<img src={Icon} alt='' className='w-24 sm:w-28 lg:w-36' />
 					<p className='text-white mt-2'>Scan to Download</p>
 					<img src={Arrow} alt='' className='w-16 sm:w-20 lg:w-24 mt-2' />
-				</div>
-				<div
-					className='absolute lg:top-96 md:block lg:block hidden right-4 p-2 rounded-full'
-					style={{
-						background:
-							"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
-					}}
-				>
-					<MessageIcon className='text-xl text-black' />
 				</div>
 
 				{/* For Small Screens (Bottom Positioned) */}
@@ -172,7 +181,11 @@ export const About = () => {
 				</div>
 			</div>
 			<AboutSection />
+			<PayITSection />
+			{/* <CustomSection /> */}
+			<CenteredSectionWithGrid />
 			<Testimonial />
+			<GetStartedSteps />
 			{/* <CenteredImageLayout /> */}
 			<AboutFooter />
 		</div>
