@@ -118,7 +118,7 @@ export const About = () => {
 							onClick={toggleDropdowns}
 						>
 							<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
-							<FaAndroid className='text-lg sm:text-xl lg:text-2xl mr-2' />
+							<FaAndroid className='text-lg sm:text-xl lg:text-3xl mr-2' />
 							<span>Download the App</span>
 						</button>
 					</div>
@@ -216,8 +216,8 @@ export const About = () => {
 									"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
 							}}
 						>
-							<AppleIcon sx={{ marginLeft: "4px" }} />
-							<AndroidIcon sx={{ marginLeft: "4px" }} />{" "}
+							<AppleIcon sx={{ marginLeft: "4px", fontSize: "24px" }} />
+							<AndroidIcon sx={{ marginLeft: "4px", fontSize: "28px" }} />{" "}
 							<span className='ml-4'>Download the App</span>
 						</button>
 					</div>

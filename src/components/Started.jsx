@@ -21,7 +21,9 @@ export const Started = () => {
 								"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
 						}}
 					>
-						<FaAndroid /> <FaApple /> <span>Download the App</span>
+						<FaApple className='text-md sm:text-sm lg:text-lg ' />{" "}
+						<FaAndroid className='text-md sm:text-sm lg:text-xl' />{" "}
+						<span className='ml-2'>Download the App</span>
 					</button>
 				</div>
 				<div className='flex-1'>
