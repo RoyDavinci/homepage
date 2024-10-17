@@ -60,7 +60,7 @@ export const About = () => {
 
 				{/* Download Button */}
 
-				<div>
+				{/* <div>
 					<button
 						className='flex items-center justify-center my-4 sm:my-6 lg:my-8 text-gray-800 text-sm sm:text-base lg:text-lg py-3 sm:py-4 lg:py-5 px-6 sm:px-8 lg:px-10 rounded-full shadow-md hover:shadow-lg transition duration-300'
 						style={{
@@ -105,7 +105,58 @@ export const About = () => {
 					>
 						<MessageIcon className='text-xl text-black' />
 					</div>
+				</div> */}
+
+				<div className='flex items-center justify-between w-full'>
+					<div className='flex-grow flex justify-center'>
+						<button
+							className='flex items-center justify-center my-4 sm:my-6 lg:my-8 text-gray-800 text-sm sm:text-base lg:text-lg py-3 sm:py-4 lg:py-5 px-6 sm:px-8 lg:px-10 rounded-full shadow-md hover:shadow-lg transition duration-300'
+							style={{
+								background:
+									"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+							}}
+							onClick={toggleDropdowns}
+						>
+							<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
+							<FaAndroid className='text-lg sm:text-xl lg:text-2xl mr-2' />
+							<span>Download the App</span>
+						</button>
+					</div>
+
+					<div
+						className='hidden md:block p-2 rounded-full justify-center items-center'
+						style={{
+							background:
+								"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+							// width: "60px", // Adjust width as needed
+						}}
+					>
+						<MessageIcon className='text-xl text-black' />
+					</div>
 				</div>
+
+				{isOpen && (
+					<div className='mt-2 w-48 bg-white rounded-md shadow-lg'>
+						<a
+							href='#'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
+							onClick={() => setIsOpen(false)}
+						>
+							iOS
+						</a>
+						<a
+							href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
+							onClick={() => setIsOpen(false)}
+						>
+							Android
+						</a>
+					</div>
+				)}
 
 				<img
 					src={image}
