@@ -1,164 +1,155 @@
 import React, { useState } from "react";
 import { FaBars, FaChevronDown, FaEnvelope } from "react-icons/fa";
 import Logo from "../assets/payit/Group 30910.png";
-import Background from "../assets/payit/Desktop4.jpg";
-import "./styles.css";
 import { Link } from "react-router-dom";
+import "./styles.css";
 
 const Header = () => {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
-	const toggleDropdown = () => {
-		setDropdownOpen(!dropdownOpen);
-	};
+	const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+	const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+	const toggleDropdowns = () => setIsOpen(!isOpen);
 
-	const toggleMobileMenu = () => {
-		setMobileMenuOpen(!mobileMenuOpen);
+	const handleRedirect = (platform) => {
+		const urls = {
+			ios: "https://apps.apple.com", // Replace with actual iOS link
+			android: "https://play.google.com/store", // Replace with actual Android link
+		};
+		window.open(urls[platform], "_blank");
+		setIsOpen(false); // Close the dropdown after click
 	};
 
 	return (
 		<header className='header'>
-			<div className='w-full  text-white shadow-md p-4 flex items-center justify-between relative'>
+			<div className='w-full text-white shadow-md p-4 flex items-center justify-between'>
+				{/* Logo */}
 				<div className='text-xl font-bold'>
-					<img src={Logo} alt='Logo' className='h-8 inline-block' />
+					<img src={Logo} alt='Logo' className='h-8' />
 				</div>
 
-				{/* Center items for larger screens */}
-				<nav className='hidden md:flex space-x-8 '>
-					<div className='cursor-pointer hover:underline text-white '>
-						Company
-					</div>
+				{/* Desktop Navigation */}
+				<nav className='hidden md:flex space-x-8'>
+					<div className='cursor-pointer hover:underline'>Company</div>
 
-					{/* Dropdown item */}
+					{/* Products Dropdown */}
 					<div className='relative'>
 						<div
-							className='cursor-pointer hover:underline flex items-center text-white '
+							className='cursor-pointer hover:underline flex items-center'
 							onClick={toggleDropdown}
 						>
 							Products
 							<FaChevronDown className='ml-1' />
 						</div>
 						{dropdownOpen && (
-							<div className='absolute left-0 mt-2 w-48  text-black rounded-lg shadow-lg z-10'>
-								<Link
-									to='/products'
-									className='p-2 block hover:bg-gray-200 text-white cursor-pointer'
-								>
+							<div className='absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg'>
+								<Link to='/products' className='p-2 block hover:bg-gray-200'>
 									PayIT
 								</Link>
-								<Link
-									to='/products'
-									className='p-2 block hover:bg-gray-200 text-white  cursor-pointer'
-								>
+								<Link to='/products' className='p-2 block hover:bg-gray-200'>
 									SchoolIT
 								</Link>
-								{/* <Link
-									to='/products'
-									className='p-2 block hover:bg-gray-200 text-white  cursor-pointer'
-								>
-									Child 3
-								</Link> */}
 							</div>
 						)}
 					</div>
 
-					<Link
-						to='/contact-us'
-						className='cursor-pointer hover:underline text-white '
-					>
+					<Link to='/contact-us' className='hover:underline'>
 						Contact Us
 					</Link>
 				</nav>
 
-				{/* Button on the right */}
-				<div>
-					<button className='bg-[#F9B141] text-black py-2 px-4 rounded-lg  transition'>
-						Request A Demo
+				{/* Download Button with Dropdown */}
+				<div className='relative inline-block'>
+					<button
+						onClick={toggleDropdowns}
+						className='bg-[#F9B141] text-black py-2 px-4 rounded-lg cursor-pointer'
+					>
+						Download Now
 					</button>
+
+					{isOpen && (
+						<div className='absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg'>
+							<a
+								href='#'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block px-4 py-2 hover:bg-gray-100 text-black cursor-pointer'
+								onClick={() => setIsOpen(false)}
+							>
+								iOS
+							</a>
+							<a
+								href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block px-4 py-2 hover:bg-gray-100  text-black cursor-pointer'
+								onClick={() => setIsOpen(false)}
+							>
+								Android
+							</a>
+						</div>
+					)}
 				</div>
 
-				{/* Mobile menu icon */}
-				<div className='md:hidden flex items-center'>
-					<button
-						className='text-white focus:outline-none'
-						onClick={toggleMobileMenu}
-					>
+				{/* Mobile Menu Icon */}
+				<div className='md:hidden'>
+					<button onClick={toggleMobileMenu}>
 						<FaBars className='h-6 w-6' />
 					</button>
 				</div>
 
-				{/* Mobile menu items */}
+				{/* Mobile Menu */}
 				{mobileMenuOpen && (
-					<nav className='absolute top-full right-0 mt-2  w-32 rounded-lg shadow-lg z-20'>
-						<div className='p-2 cursor-pointer text-white '>Company</div>
-
-						{/* Dropdown item */}
+					<nav className='absolute top-full right-0 mt-2 w-32 bg-white rounded-md shadow-lg'>
+						<div className='p-2'>Company</div>
 						<div className='relative'>
 							<div
-								className='cursor-pointer text-white  flex items-center p-2'
+								className='p-2 flex items-center cursor-pointer'
 								onClick={toggleDropdown}
 							>
 								Products
 								<FaChevronDown className='ml-1' />
 							</div>
 							{dropdownOpen && (
-								<div className='mt-2 text-white  rounded-lg shadow-lg z-10'>
-									<Link
-										to='/products'
-										className='p-2 block hover:bg-gray-200 text-white  cursor-pointer'
-									>
+								<div className='mt-2'>
+									<Link to='/products' className='p-2 block hover:bg-gray-200'>
 										PayIT
 									</Link>
-									<Link
-										to='/products'
-										className='p-2 block text-white  hover:bg-gray-200 cursor-pointer'
-									>
+									<Link to='/products' className='p-2 block hover:bg-gray-200'>
 										SchoolIT
 									</Link>
-									{/* <Link
-										to='/products'
-										className='p-2 block text-white  hover:bg-gray-200 cursor-pointer'
-									>
-										Child 3
-									</Link> */}
 								</div>
 							)}
 						</div>
-
-						<div className='p-2 text-white cursor-pointer'>Contact Us</div>
+						<Link to='/contact-us' className='p-2'>
+							Contact Us
+						</Link>
 					</nav>
 				)}
 			</div>
-			{/* Logo on the left */}
 
 			{/* Hero Section */}
-			<section className='flex-1 flex items-center h-full justify-center relative text-center p-8'>
-				<div className='w-full md:w-3/5 text-center'>
-					<h1 className='text-4xl md:text-6xl font-bold mb-8 text-white '>
-						Empowering You with Fast, Smarter, Seamless Solutions{" "}
+			<section className='flex-1 flex items-center justify-center text-center p-8'>
+				<div className='w-full md:w-3/5'>
+					<h1 className='text-4xl md:text-6xl font-bold mb-8 text-white'>
+						Empowering You with Fast, Smarter, and Seamless Solutions
 					</h1>
-					<p className='text-md md:text-lg mb-12 text-white '>
-						PayIT, a Top Payment App in Africa and Nigeria, is built to provide
-						You with intelligent, secure, and personalised financial services.
-						Whether You’re paying bills, transferring money, or managing Your
-						expenses, PayIT leverages AI-driven technology to give You a
-						seamless and enjoyable experience
+					<p className='text-md md:text-lg mb-12 text-white'>
+						PayIT provides intelligent, secure, and personalized financial
+						services. From airtime purchases to expense management, let AI
+						enhance your financial experience.
 					</p>
 					<div className='flex items-center justify-center gap-8'>
-						<button className='bg-[#F9B141] text-black py-3 px-6 rounded-lg text-lg md:text-xl hover:bg-[#F9B141] transition'>
+						<button className='bg-[#F9B141] text-black py-3 px-6 rounded-lg hover:bg-[#F9B141] transition'>
 							Get Started
 						</button>
-						<div>
-							<button className='bg-[#F9B141] p-4 rounded-full shadow-lg hover:bg-[#F9B141] transition'>
-								<FaEnvelope className='text-black h-6 w-6' />
-							</button>
-						</div>
+						<button className='bg-[#F9B141] p-4 rounded-full shadow-lg hover:bg-[#F9B141] transition'>
+							<FaEnvelope className='text-black h-6 w-6' />
+						</button>
 					</div>
 				</div>
-
-				{/* Message Icon */}
-				{/* <div className='absolute bottom-24  right-4'></div> */}
 			</section>
 		</header>
 	);
