@@ -136,15 +136,14 @@ const Header = () => {
 			<section className='flex-1 flex items-center h-full justify-center relative text-center p-8'>
 				<div className='w-full md:w-3/5 text-center'>
 					<h1 className='text-4xl md:text-6xl font-bold mb-8 text-white '>
-						Empowering You with Smarter, Seamless Financial Solutions{" "}
+						Empowering You with Fast, Smarter, Seamless Solutions{" "}
 					</h1>
-					<p className='text-xl md:text-2xl mb-12 text-white '>
-						PayIT to be one of the Top Five Payment Apps in Africa and one of
-						the Top Three in Nigeria, built to provide You with intelligent,
-						secure, and personalized financial services. Whether You’re paying
-						bills, transferring money, or managing Your expenses, PayIT
-						leverages AI-driven technology to give You a seamless and enjoyable
-						experience
+					<p className='text-md md:text-lg mb-12 text-white '>
+						PayIT, a Top Payment App in Africa and Nigeria, is built to provide
+						You with intelligent, secure, and personalised financial services.
+						Whether You’re paying bills, transferring money, or managing Your
+						expenses, PayIT leverages AI-driven technology to give You a
+						seamless and enjoyable experience
 					</p>
 					<div className='flex items-center justify-center gap-8'>
 						<button className='bg-[#F9B141] text-black py-3 px-6 rounded-lg text-lg md:text-xl hover:bg-[#F9B141] transition'>
