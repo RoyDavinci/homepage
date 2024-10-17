@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import MessageIcon from "@mui/icons-material/Message";
 import { FaApple, FaAndroid } from "react-icons/fa";
 import AboutSection from "../components/AboutSection";
@@ -15,6 +15,13 @@ import Image8 from "../assets/payit/image8.png";
 
 export const About = () => {
 	const { pathname } = useLocation();
+	const [dropdownOpen, setDropdownOpen] = useState(false);
+	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+	const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+	const toggleDropdowns = () => setIsOpen(!isOpen);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -31,13 +38,16 @@ export const About = () => {
 
 				{/* Title */}
 				<h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white mb-2 sm:mb-4 lg:mb-6'>
-					Seamless payments, unlimited possibilities
+					Empowering You with Fast, Smarter, and Seamless Solutions
 				</h1>
 
 				{/* Subtitle */}
 				<p className='text-base sm:text-lg lg:text-xl text-center text-[#626262] mb-4 sm:mb-6 lg:mb-8'>
-					Experience the future of payments with PayIT—your all-in-one secure
-					app for fast, secure, and effortless transactions.
+					PayIT, one of the Top Payment Apps in Africa, is designed to provide
+					You with intelligent, secure, and personalized financial services.
+					Whether You’re buying airtime or data, paying bills, transferring
+					money, or managing Your expenses, PayIT leverages AI-driven technology
+					to deliver a seamless and enjoyable experience every time.
 				</p>
 
 				{/* Download Button */}
@@ -45,13 +55,38 @@ export const About = () => {
 					className='flex items-center justify-center my-4 sm:my-6 lg:my-8 text-gray-800 text-sm sm:text-base lg:text-lg py-3 sm:py-4 lg:py-5 px-6 sm:px-8 lg:px-10 rounded-full shadow-md hover:shadow-lg transition duration-300'
 					style={{
 						background:
-							"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+							"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)", // Keep the original gradient
 					}}
+					onClick={toggleDropdowns}
 				>
 					<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
 					<FaAndroid className='text-lg sm:text-xl lg:text-2xl mr-2' />
 					<span>Download the App</span>
 				</button>
+
+				{/* Render dropdown below the button */}
+				{isOpen && (
+					<div className='mt-2 w-48 bg-white rounded-md shadow-lg'>
+						<a
+							href='#'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
+							onClick={() => setIsOpen(false)}
+						>
+							iOS
+						</a>
+						<a
+							href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
+							onClick={() => setIsOpen(false)}
+						>
+							Android
+						</a>
+					</div>
+				)}
 
 				{/* Image at the Bottom */}
 				<img
