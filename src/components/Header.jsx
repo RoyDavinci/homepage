@@ -137,9 +137,12 @@ const Header = () => {
 						Empowering You with Fast, Smarter, and Seamless Solutions
 					</h1>
 					<p className='text-md md:text-lg mb-12 text-white'>
-						PayIT provides intelligent, secure, and personalized financial
-						services. From airtime purchases to expense management, let AI
-						enhance your financial experience.
+						PayIT, one of the Top Payment Apps in Africa, is designed to provide
+						You with intelligent, secure, and personalized financial services.
+						Whether You’re buying airtime or data, paying bills, transferring
+						money, or managing Your expenses, PayIT leverages AI-driven
+						technology to deliver a seamless and enjoyable experience every
+						time.
 					</p>
 					<div className='flex items-center justify-center gap-8'>
 						<button className='bg-[#F9B141] text-black py-3 px-6 rounded-lg hover:bg-[#F9B141] transition'>
