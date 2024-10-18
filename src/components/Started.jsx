@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../assets/Studio.png";
-import { FaApple, FaAndroid } from "react-icons/fa";
+import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 export const Started = () => {
 	return (
@@ -21,8 +21,8 @@ export const Started = () => {
 								"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
 						}}
 					>
-						<FaApple className='text-md sm:text-sm lg:text-lg ' />{" "}
-						<FaAndroid className='text-md sm:text-sm lg:text-xl' />{" "}
+						<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
+						<FaGooglePlay className='text-lg sm:text-xl lg:text-xl mr-2' />
 						<span className='ml-2'>Download the App</span>
 					</button>
 				</div>

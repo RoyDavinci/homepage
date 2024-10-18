@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../assets/payit/responsive.png";
-import { FaApple, FaAndroid } from "react-icons/fa";
+import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 const CenteredImageLayout = () => {
 	return (
@@ -50,7 +50,7 @@ const CenteredImageLayout = () => {
 		// 					<FaApple /> App Store
 		// 				</button>
 		// 				<button className='flex gap-2 items-center px-3 py-1 bg-[#FEF48B] rounded-full'>
-		// 					<FaAndroid /> Play Store
+		// 					<FaGooglePlay /> Play Store
 		// 				</button>
 		// 			</div>
 		// 		</div>
@@ -103,7 +103,7 @@ const CenteredImageLayout = () => {
 							<FaApple /> App Store
 						</button>
 						<button className='flex gap-2 items-center px-3 py-1 bg-[#FEF48B] rounded-full'>
-							<FaAndroid /> Play Store
+							<FaGooglePlay /> Play Store
 						</button>
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaChevronDown, FaEnvelope } from "react-icons/fa";
-import Logo from "../assets/payit/Group 30910.png";
+import Logo from "../assets/PayIT SVG.svg";
 import { Link } from "react-router-dom";
 import "./styles.css";
 

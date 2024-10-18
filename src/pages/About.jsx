@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import MessageIcon from "@mui/icons-material/Message";
-import { FaApple, FaAndroid } from "react-icons/fa";
+import { FaApple, FaGooglePlay } from "react-icons/fa";
 import AboutSection from "../components/AboutSection";
 import Testimonial from "../components/Testimonials";
 import image from "../assets/payit/imag37.png";
 import { useLocation } from "react-router-dom";
 import AppleIcon from "@mui/icons-material/Apple";
 import AndroidIcon from "@mui/icons-material/Android";
-import Logo from "../assets/payit/Group 30910.png";
+import Logo from "../assets/PayIT SVG.svg";
 import AboutFooter from "../components/AboutFooter";
 import Arrow from "../assets/payit/Arrow_05.png";
 import Icon from "../assets/payit/Untitled.png";
@@ -44,11 +44,14 @@ export const About = () => {
 				<div className='max-w-2xl mx-auto px-4'>
 					{" "}
 					{/* Container to limit width and center the content */}
-					<h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white mb-2 sm:mb-4 lg:mb-6'>
+					<h1 className='text-4xl md:text-6xl font-bold text-center text-white mb-2 sm:mb-4 lg:mb-6'>
 						Empowering You with Fast, Smarter, and Seamless Solutions
 					</h1>
 					{/* Subtitle */}
-					<p className='text-base sm:text-lg lg:text-xl text-center text-[#626262] mb-4 sm:mb-6 lg:mb-8'>
+					<p
+						className='text-md md:text-lg mb-12 text-[#626262]  text-center'
+						// className='text-base sm:text-lg lg:text-xl text-center mb-4 sm:mb-6 lg:mb-8'
+					>
 						PayIT, one of the Top Payment Apps in Africa, is designed to provide
 						You with intelligent, secure, and personalized financial services.
 						Whether You’re buying airtime or data, paying bills, transferring
@@ -70,7 +73,7 @@ export const About = () => {
 						onClick={toggleDropdowns}
 					>
 						<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
-						<FaAndroid className='text-lg sm:text-xl lg:text-2xl mr-2' />
+						<FaGooglePlay className='text-lg sm:text-xl lg:text-2xl mr-2' />
 						<span>Download the App</span>
 					</button>
 
@@ -118,7 +121,7 @@ export const About = () => {
 							onClick={toggleDropdowns}
 						>
 							<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
-							<FaAndroid className='text-lg sm:text-xl lg:text-3xl mr-2' />
+							<FaGooglePlay className='text-lg sm:text-xl lg:text-xl mr-2' />
 							<span>Download the App</span>
 						</button>
 					</div>
@@ -216,8 +219,8 @@ export const About = () => {
 									"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
 							}}
 						>
-							<AppleIcon sx={{ marginLeft: "4px", fontSize: "24px" }} />
-							<AndroidIcon sx={{ marginLeft: "4px", fontSize: "28px" }} />{" "}
+							<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
+							<FaGooglePlay className='text-lg sm:text-xl lg:text-xl mr-2' />
 							<span className='ml-4'>Download the App</span>
 						</button>
 					</div>

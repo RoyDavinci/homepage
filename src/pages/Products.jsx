@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import {
 	FaApple,
-	FaAndroid,
+	FaGooglePlay,
 	FaLock,
 	FaPiggyBank,
 	FaChartLine,
@@ -49,8 +49,8 @@ function FintechLandingPage() {
 									"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
 							}}
 						>
-							<FaAndroid className='inline-block mr-2 text-2xl' /> Download for
-							Android
+							<FaGooglePlay className='inline-block mr-2 text-2xl' /> Download
+							for Android
 						</button>
 					</div>
 				</div>

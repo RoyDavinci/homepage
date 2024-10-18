@@ -1,8 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { Started } from "./Started";
-import Logo from "../assets/payit/Group 30910.png";
-
+import Logo from "../assets/PayIT SVG.svg";
 const AboutFooter = () => {
 	return (
 		<footer className='bg-[#0f0e0e] text-white px-6 py-8'>
