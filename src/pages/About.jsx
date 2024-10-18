@@ -22,10 +22,12 @@ export const About = () => {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
+	const [isNewOpen, setIsNewOpen] = useState(false);
 
 	const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 	const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 	const toggleDropdowns = () => setIsOpen(!isOpen);
+	const toggleNewDropdowns = () => setIsNewOpen(!isNewOpen);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -218,11 +220,34 @@ export const About = () => {
 								background:
 									"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
 							}}
+							onClick={toggleNewDropdowns}
 						>
 							<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
 							<FaGooglePlay className='text-lg sm:text-xl lg:text-xl mr-2' />
 							<span className='ml-4'>Download the App</span>
 						</button>
+						{isNewOpen && (
+							<div className='mt-2 w-48 bg-white rounded-md shadow-lg'>
+								<a
+									href='#'
+									target='_blank'
+									rel='noopener noreferrer'
+									className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
+									onClick={() => setIsNewOpen(false)}
+								>
+									iOS
+								</a>
+								<a
+									href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
+									target='_blank'
+									rel='noopener noreferrer'
+									className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
+									onClick={() => setIsNewOpen(false)}
+								>
+									Android
+								</a>
+							</div>
+						)}
 					</div>
 				</div>
 				{/* Right Side (Image) */}
