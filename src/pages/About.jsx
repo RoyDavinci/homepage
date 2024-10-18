@@ -51,12 +51,12 @@ export const About = () => {
 					</h1>
 					{/* Subtitle */}
 					<p
-						className='text-md md:text-lg mb-12 text-[#626262]  text-center'
+						className='text-md md:text-lg mb-4 text-[#626262]  text-center'
 						// className='text-base sm:text-lg lg:text-xl text-center mb-4 sm:mb-6 lg:mb-8'
 					>
 						PayIT, one of the Top Payment Apps in Africa, is designed to provide
 						You with intelligent, secure, and personalized financial services.
-						Whether You’re buying airtime or data, paying bills, transferring
+						Whether You're buying airtime or data, paying bills, transferring
 						money, or managing Your expenses, PayIT leverages AI-driven
 						technology to deliver a seamless and enjoyable experience every
 						time.
