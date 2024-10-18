@@ -11,7 +11,7 @@ export const Started = () => {
 			<div className='lg:w-[95%] w-full bg-black flex justify-between items-center p-6 lg:flex-row flex-col  rounded-[3rem]'>
 				<div className='flex-1  text-white'>
 					<h4 className='text-[#767676] w-full lg:w-2/5'>DOWNLOAD THE APP</h4>
-					<h1 className='my-4 text-[48px] w-full lg:w-3/5'>
+					<h1 className='my-4 text-[48px] font-bold w-full lg:w-3/5'>
 						Ready to get Started?
 					</h1>
 					<p className='text-[#9D9A9A] text-lg w-full lg:w-3/5'>
