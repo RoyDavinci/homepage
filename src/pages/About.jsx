@@ -34,16 +34,16 @@ export const About = () => {
 	}, [pathname]);
 	return (
 		<div>
-			<div className='relative flex flex-col items-center justify-center bg-black px-4 sm:px-8 lg:px-16 py-8 sm:py-12 lg:py-16'>
+			<div className='relative flex flex-col items-center justify-center bg-black px-4 sm:px-8 lg:px-16 py-8 sm:py-4 lg:py-2'>
 				{/* Logo */}
 				<img
 					src={Logo}
 					alt='Logo'
-					className='my-6 sm:my-8 lg:my-10 w-24 sm:w-32 lg:w-40'
+					className='my-2 sm:my-2 lg:my-10 w-24 sm:w-32 lg:w-40'
 				/>
 
 				{/* Title */}
-				<div className='max-w-2xl mx-auto px-4'>
+				<div className='max-w-4xl mx-auto px-4'>
 					{" "}
 					{/* Container to limit width and center the content */}
 					<h1 className='text-4xl md:text-6xl font-bold text-center text-white mb-2 sm:mb-4 lg:mb-6'>
@@ -62,56 +62,6 @@ export const About = () => {
 						time.
 					</p>
 				</div>
-
-				{/* Download Button */}
-
-				{/* <div>
-					<button
-						className='flex items-center justify-center my-4 sm:my-6 lg:my-8 text-gray-800 text-sm sm:text-base lg:text-lg py-3 sm:py-4 lg:py-5 px-6 sm:px-8 lg:px-10 rounded-full shadow-md hover:shadow-lg transition duration-300'
-						style={{
-							background:
-								"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
-						}}
-						onClick={toggleDropdowns}
-					>
-						<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
-						<FaGooglePlay className='text-lg sm:text-xl lg:text-2xl mr-2' />
-						<span>Download the App</span>
-					</button>
-
-					{isOpen && (
-						<div className='mt-2 w-48 bg-white rounded-md shadow-lg'>
-							<a
-								href='#'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
-								onClick={() => setIsOpen(false)}
-							>
-								iOS
-							</a>
-							<a
-								href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
-								onClick={() => setIsOpen(false)}
-							>
-								Android
-							</a>
-						</div>
-					)}
-					<div
-						className=' md:block lg:block hidden right-4 p-2 rounded-full'
-						style={{
-							background:
-								"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
-						}}
-					>
-						<MessageIcon className='text-xl text-black' />
-					</div>
-				</div> */}
-
 				<div className='flex items-center justify-between w-full'>
 					<div className='flex-grow flex justify-center'>
 						<button
@@ -136,7 +86,13 @@ export const About = () => {
 							// width: "60px", // Adjust width as needed
 						}}
 					>
-						<MessageIcon className='text-xl text-black' />
+						<a
+							href='https://api.whatsapp.com/send?phone=+2347061728745&text=Dear%20PayIT%20Support'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<MessageIcon className='text-xl text-black' />
+						</a>
 					</div>
 				</div>
 
