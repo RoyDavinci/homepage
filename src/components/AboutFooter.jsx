@@ -59,28 +59,28 @@ const AboutFooter = () => {
 				</div>
 
 				{/* Right Section: Links */}
-				<div className='flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 mt-6 md:mt-0'>
+				<div className='flex flex-col md:flex-row flex-1 items-center  gap-8 md:gap-12 lg:gap-16 mt-6 md:mt-0'>
 					<a
 						href='#home'
-						className='hover:text-yellow-500 transition duration-300'
+						className='hover:text-yellow-500 transition duration-300 text-xl '
 					>
 						Home
 					</a>
 					<a
 						href='#about'
-						className='hover:text-yellow-500 transition duration-300'
+						className='hover:text-yellow-500 transition duration-300 text-xl '
 					>
 						About
 					</a>
 					<a
 						href='#terms'
-						className='hover:text-yellow-500 transition duration-300'
+						className='hover:text-yellow-500 transition duration-300 text-xl '
 					>
 						Terms & Conditions
 					</a>
 					<a
-						href='#contact'
-						className='hover:text-yellow-500 transition duration-300'
+						href='/contact-us'
+						className='hover:text-yellow-500 transition duration-300 text-xl '
 					>
 						Contact Us
 					</a>
