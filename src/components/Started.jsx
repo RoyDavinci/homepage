@@ -8,17 +8,19 @@ export const Started = () => {
 	const toggleNewDropdowns = () => setIsNewOpen(!isNewOpen);
 	return (
 		<div className='flex  justify-center items-center  '>
-			<div className='lg:w-3/5 w-full bg-black flex justify-between items-center p-6 lg:flex-row flex-col  rounded-2xl'>
-				<div className='flex-1 text-white'>
-					<h4 className='text-[#767676]'>DOWNLOAD THE APP</h4>
-					<h1 className='my-4 text-[40px]'>Ready to get Started?</h1>
-					<p className='text-[#9D9A9A] text-md'>
+			<div className='lg:w-[95%] w-full bg-black flex justify-between items-center p-6 lg:flex-row flex-col  rounded-[3rem]'>
+				<div className='flex-1  text-white'>
+					<h4 className='text-[#767676] w-full lg:w-2/5'>DOWNLOAD THE APP</h4>
+					<h1 className='my-4 text-[48px] w-full lg:w-3/5'>
+						Ready to get Started?
+					</h1>
+					<p className='text-[#9D9A9A] text-lg w-full lg:w-3/5'>
 						Join millions of users who are experiencing the convenience and
 						security of PayIT. Download the app today and unlock a world of
 						possibilities
 					</p>
 					<button
-						className='flex items-center px-4 py-2 rounded-full text-black my-4'
+						className='flex items-center px-4 py-2 mt-32 rounded-full text-black my-4'
 						style={{
 							background:
 								"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
