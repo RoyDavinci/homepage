@@ -14,13 +14,13 @@ export const Started = () => {
 					<h1 className='my-4 text-[48px] font-bold w-full lg:w-3/5'>
 						Ready to get Started?
 					</h1>
-					<p className='text-[#9D9A9A] text-lg w-full lg:w-3/5'>
+					<p className='text-[#9D9A9A] text-lg w-full lg:w-[73%]'>
 						Join millions of users who are experiencing the convenience and
 						security of PayIT. Download the app today and unlock a world of
 						possibilities
 					</p>
 					<button
-						className='flex items-center px-4 py-2 mt-32 rounded-full text-black my-4'
+						className='flex items-center px-4 py-2 mt-12 rounded-full text-black my-4'
 						style={{
 							background:
 								"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
