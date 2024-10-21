@@ -1,5 +1,11 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import {
+	FaFacebook,
+	FaInstagram,
+	FaLinkedin,
+	FaTwitter,
+	FaYoutube,
+} from "react-icons/fa";
 import { Started } from "./Started";
 import Logo from "../assets/PayIT SVG.svg";
 import FooterImage from "../assets/Group 30915.svg";
@@ -25,16 +31,16 @@ const AboutFooter = () => {
 
 					{/* Social Media Icons */}
 					<div className='flex space-x-4'>
-						<a
+						{/* <a
 							href='https://www.facebook.com'
 							target='_blank'
 							rel='noopener noreferrer'
 							className='p-2 rounded-full border border-[#ccc]'
 						>
 							<FaFacebook className='text-md hover:text-blue-500 transition duration-300' />
-						</a>
+						</a> */}
 						<a
-							href='https://www.instagram.com'
+							href='https://instagram.com/payit_ng'
 							target='_blank'
 							rel='noopener noreferrer'
 							className='p-2 rounded-full border border-[#ccc]'
@@ -42,7 +48,7 @@ const AboutFooter = () => {
 							<FaInstagram className='text-md hover:text-pink-500 transition duration-300' />
 						</a>
 						<a
-							href='https://www.linkedin.com'
+							href='ttps://www.linkedin.com/showcase/payitng/about/?viewAsMember=true'
 							target='_blank'
 							rel='noopener noreferrer'
 							className='p-2 rounded-full border border-[#ccc]'
@@ -50,12 +56,12 @@ const AboutFooter = () => {
 							<FaLinkedin className='text-md hover:text-blue-700 transition duration-300' />
 						</a>
 						<a
-							href='https://www.youtube.com'
+							href='https://x.com/payit_ng'
 							target='_blank'
 							rel='noopener noreferrer'
 							className='p-2 rounded-full border border-[#ccc]'
 						>
-							<FaYoutube className='text-md hover:text-red-600 transition duration-300' />
+							<FaTwitter className='text-md hover:text-red-600 transition duration-300' />
 						</a>
 					</div>
 				</div>
