@@ -11,11 +11,12 @@ import Logo from "../assets/PayIT SVG.svg";
 import AboutFooter from "../components/AboutFooter";
 import Arrow from "../assets/payit/Arrow_05.png";
 import Icon from "../assets/payit/Untitled.png";
-import Image8 from "../assets/payit/image8.png";
+import Image8 from "../assets/b787c316c48e71944ed741cc2bdfa862.png";
 import PayITSection from "../components/PayIt";
 import GetStartedSteps from "../components/GetStarted";
 import CustomSection from "../components/CustomSection";
 import CenteredSectionWithGrid from "../components/CenteredSection";
+import pattern from "../assets/Pattern Top.svg";
 
 export const About = () => {
 	const { pathname } = useLocation();
@@ -143,146 +144,148 @@ export const About = () => {
 					<MessageIcon className='text-xl text-black' />
 				</div>
 			</div>
-
-			{/* <div className='flex flex-col md:flex-row justify-between  p-10 rounded-lg '>
-				<div className='flex w-full flex-1 flex-col md:items-start lg:ml-12 ml-0 items-center text-center md:text-left md:flex-1'>
-					<span className='text-gray-500 text-sm md:text-base'>
-						WHY CHOOSE PAYIT
-					</span>
-					<h1
-						className=' md:text-3xl  font-extrabold mt-2'
-						style={{
-							fontFamily: "'Maison Neue', sans-serif",
-							fontSize: "40px",
-						}}
-					>
-						One App, Unlimited Possibilities
-					</h1>
-					<p
-						className='mt-4 text-gray-700'
-						style={{ fontFamily: "'Aeonik', sans-serif", fontSize: "" }}
-					>
-						PayIT is more than just a payment app; it's a comprehensive solution
-						designed to simplify your financial life. With PayIT, you can send
-						money, pay bills, shop online, and manage your finances—all from one
-						app. Our user-friendly interface and robust security features ensure
-						that your transactions are not only convenient but also safe.
-					</p>
-					<div>
-						<button
-							className='flex items-center p-4 my-4  rounded-full'
+			<div className='relative h-[100%] md:h-[800px] overflow-hidden'>
+				<div class='absolute inset-0 z-[-1]'>
+					<img src={pattern} alt='' className='w-full  object-cover' />
+				</div>
+				<div className='flex md:flex-row flex-col  flex-1 w-full'>
+					<div className='flex-1 w-full md:w-[30%] p-10'>
+						<span className='text-gray-500 text-sm md:text-base'>
+							WHY CHOOSE PAYIT
+						</span>
+						<h1
+							className='md:text-3xl font-extrabold mt-2'
 							style={{
-								background:
-									"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+								fontFamily: "'Maison Neue', sans-serif",
+								fontSize: "40px",
 							}}
-							onClick={toggleNewDropdowns}
 						>
-							<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
-							<FaGooglePlay className='text-lg sm:text-xl lg:text-xl mr-2' />
-							<span className='ml-4'>Download the App</span>
-						</button>
-						{isNewOpen && (
-							<div className='mt-2 w-48 bg-white rounded-md shadow-lg'>
-								<a
-									href='#'
-									target='_blank'
-									rel='noopener noreferrer'
-									className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
-									onClick={() => setIsNewOpen(false)}
-								>
-									iOS
-								</a>
-								<a
-									href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
-									target='_blank'
-									rel='noopener noreferrer'
-									className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer' // Light hover color
-									onClick={() => setIsNewOpen(false)}
-								>
-									Android
-								</a>
-							</div>
-						)}
+							One App, Unlimited Possibilities
+						</h1>
+						<p
+							className='mt-4 text-gray-700'
+							style={{ fontFamily: "'Aeonik', sans-serif" }}
+						>
+							PayIT is more than just a payment app; it's a comprehensive
+							solution to simplify your financial life. With PayIT, you can send
+							money, pay bills, shop online, and manage your finances—all from
+							one app.
+						</p>
+						<div>
+							<button
+								className='flex items-center p-4 my-4 rounded-full'
+								style={{
+									background:
+										"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+								}}
+								onClick={toggleNewDropdowns}
+							>
+								<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
+								<FaGooglePlay className='text-lg sm:text-xl lg:text-xl mr-2' />
+								<span className='ml-4'>Download the App</span>
+							</button>
+							{isNewOpen && (
+								<div className='mt-2 w-48 bg-white rounded-md shadow-lg'>
+									<a
+										href='#'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer'
+										onClick={() => setIsNewOpen(false)}
+									>
+										iOS
+									</a>
+									<a
+										href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer'
+										onClick={() => setIsNewOpen(false)}
+									>
+										Android
+									</a>
+								</div>
+							)}
+						</div>
 					</div>
-				</div>
-				
-				<div className='mt-6 md:mt-0 md:ml-6 w-full'>
-					<img
-						src={Image8}
-						alt='App Preview'
-						className='w-full h-auto rounded-lg'
-					/>
-				</div>
-			</div> */}
-			<div className='flex flex-col md:flex-row gap-6 p-10 rounded-lg'>
-				{/* Left Side (30%) */}
-				<div className='flex flex-col md:items-start items-center text-center md:text-left'>
-					<span className='text-gray-500 text-sm md:text-base'>
-						WHY CHOOSE PAYIT
-					</span>
-					<h1
-						className='md:text-3xl font-extrabold mt-2'
-						style={{
-							fontFamily: "'Maison Neue', sans-serif",
-							fontSize: "40px",
-						}}
-					>
-						One App, Unlimited Possibilities
-					</h1>
-					<p
-						className='mt-4 text-gray-700'
-						style={{ fontFamily: "'Aeonik', sans-serif" }}
-					>
-						PayIT is more than just a payment app; it's a comprehensive solution
-						to simplify your financial life. With PayIT, you can send money, pay
-						bills, shop online, and manage your finances—all from one app.
-					</p>
-					<div>
-						<button
-							className='flex items-center p-4 my-4 rounded-full'
-							style={{
-								background:
-									"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
-							}}
-							onClick={toggleNewDropdowns}
-						>
-							<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
-							<FaGooglePlay className='text-lg sm:text-xl lg:text-xl mr-2' />
-							<span className='ml-4'>Download the App</span>
-						</button>
-						{isNewOpen && (
-							<div className='mt-2 w-48 bg-white rounded-md shadow-lg'>
-								<a
-									href='#'
-									target='_blank'
-									rel='noopener noreferrer'
-									className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer'
-									onClick={() => setIsNewOpen(false)}
-								>
-									iOS
-								</a>
-								<a
-									href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
-									target='_blank'
-									rel='noopener noreferrer'
-									className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer'
-									onClick={() => setIsNewOpen(false)}
-								>
-									Android
-								</a>
-							</div>
-						)}
+					<div className=' mt-6 md:mt-0 w-full md:w-[70%] '>
+						<img
+							src={Image8}
+							alt='App Preview'
+							className='w-full h-auto rounded-lg object-cover'
+						/>
 					</div>
 				</div>
 
-				{/* Right Side (70%) */}
-				<div className=' mt-6 md:mt-0'>
-					<img
-						src={Image8}
-						alt='App Preview'
-						className='w-full h-auto rounded-lg'
-					/>
-				</div>
+				{/* <div className='flex flex-col md:flex-row gap-6 p-10 rounded-lg my-10 z-10'>
+					<div className='flex flex-col md:items-start items-center text-center md:text-left'>
+						<span className='text-gray-500 text-sm md:text-base'>
+							WHY CHOOSE PAYIT
+						</span>
+						<h1
+							className='md:text-3xl font-extrabold mt-2'
+							style={{
+								fontFamily: "'Maison Neue', sans-serif",
+								fontSize: "40px",
+							}}
+						>
+							One App, Unlimited Possibilities
+						</h1>
+						<p
+							className='mt-4 text-gray-700'
+							style={{ fontFamily: "'Aeonik', sans-serif" }}
+						>
+							PayIT is more than just a payment app; it's a comprehensive
+							solution to simplify your financial life. With PayIT, you can send
+							money, pay bills, shop online, and manage your finances—all from
+							one app.
+						</p>
+						<div>
+							<button
+								className='flex items-center p-4 my-4 rounded-full'
+								style={{
+									background:
+										"linear-gradient(180deg, #FFFBD8 0%, #FFF9BD 50%, #FFF48B 100%)",
+								}}
+								onClick={toggleNewDropdowns}
+							>
+								<FaApple className='text-lg sm:text-xl lg:text-2xl mr-2' />
+								<FaGooglePlay className='text-lg sm:text-xl lg:text-xl mr-2' />
+								<span className='ml-4'>Download the App</span>
+							</button>
+							{isNewOpen && (
+								<div className='mt-2 w-48 bg-white rounded-md shadow-lg'>
+									<a
+										href='#'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer'
+										onClick={() => setIsNewOpen(false)}
+									>
+										iOS
+									</a>
+									<a
+										href='https://play.google.com/store/apps/details?id=ng.com.payit.app'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='block px-4 py-2 hover:bg-[#FEF69E] text-black cursor-pointer'
+										onClick={() => setIsNewOpen(false)}
+									>
+										Android
+									</a>
+								</div>
+							)}
+						</div>
+					</div>
+
+					<div className=' mt-6 md:mt-0'>
+						<img
+							src={Image8}
+							alt='App Preview'
+							className='w-full h-auto rounded-lg'
+						/>
+					</div>
+				</div> */}
 			</div>
 
 			<AboutSection />

@@ -7,6 +7,7 @@ import Image4 from "../assets/payit/Free.png";
 import Image5 from "../assets/payit/SatisfactionGuaranteed.png";
 import Image6 from "../assets/payit/SatisfactionGuaranteed(1).png";
 import Image7 from "../assets/payit/OriginalProducts.png";
+import pattern from "../assets/Pattern Top.svg";
 
 const AboutSection = () => {
 	const items = [
