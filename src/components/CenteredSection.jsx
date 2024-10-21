@@ -14,7 +14,8 @@ const CenteredSectionWithGrid = () => {
 					HOW IT WORKS
 				</Link>
 				<h2 className='text-3xl mt-12 md:text-5xl font-bold mb-4'>
-					Empowering Business With Bespoke Solutions
+					Unlock Mind-Blowing Features Tailored to You – Secure, Supportive, and
+					Rewarding with PayIT!{" "}
 				</h2>
 			</div>
 

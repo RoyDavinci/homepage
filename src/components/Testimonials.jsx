@@ -2,52 +2,42 @@ import React from "react";
 
 const testimonials = [
 	{
-		comment: "This payment app is incredibly user-friendly and fast!",
+		comment: "It has been a seamless app with good features so far.",
 		image: "https://via.placeholder.com/80", // Replace with actual image URL
-		username: "John Doe",
-		handle: "@johndoe",
+		username: "Mike",
+		handle: "@mike",
 	},
 	{
-		comment: "Great app! It made my transactions so much easier.",
+		comment: "Wonderful Application",
 		image: "https://via.placeholder.com/80", // Replace with actual image URL
-		username: "Jane Smith",
-		handle: "@janesmith",
+		username: "Tobi",
+		handle: "@tobi",
 	},
 	{
-		comment: "The best payment app I've used. Simple and effective.",
+		comment:
+			"Waoh, recently started using this app, am so in love with it......it's a 10/10 for me.. will surely recommend...",
 		image: "https://via.placeholder.com/80", // Replace with actual image URL
-		username: "Alice Johnson",
-		handle: "@alicejohnson",
+		username: "Funke",
+		handle: "@funke",
 	},
 	{
-		comment: "A fantastic app for managing payments. Five stars!",
+		comment:
+			"I recently started using PayIt and I am very impressed with their services.",
 		image: "https://via.placeholder.com/80", // Replace with actual image URL
-		username: "Bob Brown",
-		handle: "@bobbrown",
+		username: "Praise",
+		handle: "@praise",
 	},
 	{
-		comment: "This payment app is incredibly user-friendly and fast!",
+		comment: "Really nice app. I recommend",
 		image: "https://via.placeholder.com/80", // Replace with actual image URL
-		username: "John Doe",
-		handle: "@johndoe",
+		username: "Peter",
+		handle: "@peter",
 	},
 	{
-		comment: "Great app! It made my transactions so much easier.",
+		comment: "Lovely app 👍",
 		image: "https://via.placeholder.com/80", // Replace with actual image URL
-		username: "Jane Smith",
-		handle: "@janesmith",
-	},
-	{
-		comment: "The best payment app I've used. Simple and effective.",
-		image: "https://via.placeholder.com/80", // Replace with actual image URL
-		username: "Alice Johnson",
-		handle: "@alicejohnson",
-	},
-	{
-		comment: "A fantastic app for managing payments. Five stars!",
-		image: "https://via.placeholder.com/80", // Replace with actual image URL
-		username: "Bob Brown",
-		handle: "@bobbrown",
+		username: "Chinonso",
+		handle: "@chinonso",
 	},
 ];
 

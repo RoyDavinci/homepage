@@ -2,11 +2,13 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { Started } from "./Started";
 import Logo from "../assets/PayIT SVG.svg";
+import FooterImage from "../assets/Group 30915.svg";
 const AboutFooter = () => {
 	return (
 		<footer className='bg-[#0f0e0e] text-white px-6 py-8'>
-			<div className='-mt-20 mb-12'>
-				<Started />
+			<div className='-mt-40 mb-12'>
+				{/* <Started /> */}
+				<img src={FooterImage} alt='' />
 			</div>
 			<div className='flex flex-col md:flex-row justify-between items-center'>
 				{/* Left Section: Logo and Social Media Icons */}
