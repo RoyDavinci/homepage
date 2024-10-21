@@ -12,12 +12,12 @@ const AboutFooter = () => {
 			</div>
 			<div className='flex flex-col md:flex-row justify-between items-center'>
 				{/* Left Section: Logo and Social Media Icons */}
-				<div className='flex flex-col items-center md:items-start flex-1'>
+				<div className='flex flex-col items-center md:items-start flex-1 pl-0 md:pl-10'>
 					{/* Logo */}
 					<img src={Logo} alt='Logo' className='mb-4 ' />
 
 					{/* Description */}
-					<p className='text-center md:text-left mb-4 text-[#828282] lg:w-[40%] w-[90%]'>
+					<p className='text-center md:text-left mb-4 text-[#828282] lg:w-[70%] w-[90%]'>
 						From everyday transactions to major purchases, PayIT brings the
 						power of unlimited possibilities to your fingertips. Wherever life
 						takes you, PayIT has you covered.

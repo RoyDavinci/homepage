@@ -1,22 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Image from "../assets/payit/Illustration.png";
+import Pexels1 from "../assets/pexels1.jpeg";
+import Pexels2 from "../assets/Pexels2.jpeg";
+import Pexels3 from "../assets/pexels4.jpeg";
 
 const CenteredSectionWithGrid = () => {
 	return (
 		<section className='py-16 px-4 md:px-16 bg-white'>
 			{/* Centered Content */}
-			<div className='max-w-3xl mx-auto text-center mb-16'>
-				<Link
-					to='/about'
-					className='bg-[#E6EFFE] mb-4 text-[#0C61F0] py-3 px-6 rounded-lg text-lg md:text-xl transition'
-				>
-					HOW IT WORKS
-				</Link>
-				<h2 className='text-3xl mt-12 md:text-5xl font-bold mb-4'>
-					Unlock Mind-Blowing Features Tailored to You – Secure, Supportive, and
-					Rewarding with PayIT!{" "}
-				</h2>
+			<div className=' mx-auto  mb-16'>
+				<div className='text-center'>
+					<Link
+						to='/about'
+						className='bg-[#E6EFFE] text-center mb-4 text-[#0C61F0] py-3 px-6 rounded-lg text-lg md:text-xl transition'
+					>
+						HOW IT WORKS
+					</Link>
+				</div>
+				<div className='flex  justify-center text-center items-center'>
+					<h2 className='text-3xl  max-w-4xl mt-12 md:text-4xl font-bold mb-4'>
+						Unlock Mind-Blowing Features Tailored to You. Secure, Supportive,
+						and Rewarding with PayIT!
+					</h2>
+				</div>
 			</div>
 
 			{/* Grid Items */}
@@ -27,7 +34,7 @@ const CenteredSectionWithGrid = () => {
 						background: "linear-gradient(180deg, #E7E7E7 0%, #F3F3F3 100%)",
 					}}
 				>
-					<img src={Image} alt='Item 3' className='w-full h-auto mb-4' />
+					<img src={Pexels1} alt='Item 3' className='w-full h-auto mb-4' />
 					<h3 className='text-xl font-semibold mb-2'>
 						Experience Mind-Blowing Features, Tailored to You
 					</h3>
@@ -44,7 +51,7 @@ const CenteredSectionWithGrid = () => {
 						background: "linear-gradient(180deg, #E7E7E7 0%, #F3F3F3 100%)",
 					}}
 				>
-					<img src={Image} alt='Item 3' className='w-full h-auto mb-4' />
+					<img src={Pexels2} alt='Item 3' className='w-full h-auto mb-4' />
 					<h3 className='text-xl font-semibold mb-2'>
 						Security and Customer Support
 					</h3>
@@ -62,7 +69,7 @@ const CenteredSectionWithGrid = () => {
 						background: "linear-gradient(180deg, #E7E7E7 0%, #F3F3F3 100%)",
 					}}
 				>
-					<img src={Image} alt='Item 3' className='w-full h-auto mb-4' />
+					<img src={Pexels3} alt='Item 3' className='w-full h-auto mb-4' />
 					<h3 className='text-xl font-semibold mb-2'>
 						Suggest Features and Earn Rewards
 					</h3>
