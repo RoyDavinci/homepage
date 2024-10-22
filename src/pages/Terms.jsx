@@ -1,8 +1,17 @@
 import React from "react";
+import { FaArrowLeft } from "react-icons/fa"; // Importing Font Awesome icon
 
 const TermsAndConditions = () => {
 	return (
 		<div className='bg-[#fff] text-[#000] p-8 min-h-screen'>
+			<div className='mx-4 my-10'>
+				<a
+					href='/about'
+					className='inline-flex items-center bg-gray-500 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2'
+				>
+					<FaArrowLeft className='mr-2' /> Back to Home
+				</a>
+			</div>
 			<h1 className='text-4xl font-bold mb-6 text-center'>
 				PayIT Terms & Conditions
 			</h1>
