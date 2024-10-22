@@ -41,10 +41,20 @@ const TermsAndConditions = () => {
 
 			<section className='mb-8'>
 				<h2 className='text-2xl font-semibold mb-4'>3. Use of Services</h2>
+				<p className='mb-2'>
+					PayIT grants you a non-exclusive, non-transferable, and revocable
+					licence to use our Services solely for personal or business purposes
+					in accordance with these Terms. You agree not to:
+				</p>
 				<ul className='list-disc ml-6'>
-					<li>Do not misuse our Services or use them unlawfully.</li>
-					<li>Avoid unauthorized access to our systems or networks.</li>
-					<li>62 Adetola street, Aguda, Lagos Nigeriaapp.</li>
+					<li>Misuse our Services or use them for unlawful purposes.</li>
+					<li>
+						Attempt to gain unauthorized access to our systems or networks.
+					</li>
+					<li>
+						Reverse engineer, decompile or disassemble any part of the PayIT
+						app.
+					</li>
 				</ul>
 			</section>
 
@@ -52,46 +62,91 @@ const TermsAndConditions = () => {
 				<h2 className='text-2xl font-semibold mb-4'>
 					4. Transactions and Payments
 				</h2>
-				<p className='mb-2'>
+				{/* <p className='mb-2'>
 					PayIT facilitates secure payments and transfers. Ensure all
 					transaction details are correct, as we are not liable for user errors.
-				</p>
+				</p> */}
 				<ul className='list-disc ml-6'>
-					<li>
-						<strong>Fees:</strong> Fees will be disclosed before proceeding with
-						transactions.
+					<li className='mb-2'>
+						<strong> Processing Transactions:</strong> <br /> <br /> PayIT
+						allows you to make payments, transfers, and other financial
+						transactions securely. You are responsible for ensuring the accuracy
+						of transaction details (e.g., amount, recipient). We are not liable
+						for errors or losses arising from incorrect transaction details
+						entered by you.
 					</li>
-					<li>
-						<strong>Refunds:</strong> Refunds are subject to our Refund Policy
-						and must be requested within 30 days.
+					<li className='mb-2'>
+						<strong> Fees:</strong> <br /> <br /> Certain transactions may incur
+						fees. PayIT will disclose applicable fees before you proceed with a
+						transaction. By confirming a transaction, you accept responsibility
+						for any fees incurred.
+					</li>
+					<li className='mb-2'>
+						<strong> Refunds and Disputes:</strong> <br /> <br /> Refunds for
+						transactions are subject to our Refund Policy. If you believe there
+						is an error with a transaction, you must notify us within [30] days.
+						We will investigate and resolve disputes in accordance with our
+						policies.
+					</li>
+					<li className='mb-2'>
+						<strong> Account Security and User Responsibility: </strong> <br />{" "}
+						<br /> You are solely responsible for safeguarding your credentials,
+						including passwords, transaction PINs, and any other details that
+						may grant access to your account. You must not share this
+						information with anyone. PayIT is not responsible for unauthorized
+						access or account compromises resulting from the sharing or
+						mishandling of your credentials. You agree to take all necessary
+						precautions to protect your account.
 					</li>
 				</ul>
 			</section>
 
 			<section className='mb-8'>
-				<h2 className='text-2xl font-semibold mb-4'>5. te and</h2>
-				<p>
-					PayIT may offer discounts and promotions, which are subject to
-					expiration. The outcome of our "Spin to Win" feature is final, and no
-					specific winnings are guaranteed.
-				</p>
+				<h2 className='text-2xl font-semibold mb-4'>
+					5. Rewards, Discounts, and Promotions
+				</h2>
+				<ul className='list-disc ml-6'>
+					<li className='mb-2'>
+						<strong> Discounts and Offers:</strong> <br /> <br />
+						PayIT may provide exclusive discounts, offers, and promotional
+						campaigns. All discounts are subject to specific terms and may have
+						expiration dates. We reserve the right to modify or terminate
+						promotions at any time without notice.
+					</li>
+					<li className='mb-2'>
+						<strong> Spin to Win Feature: </strong> <br /> <br /> Our “Spin to
+						Win” feature allows users to spin and earn money back when they make
+						purchases or payments through the app. The outcome is random, and
+						PayIT does not guarantee any specific winnings. Users must accept
+						the results as final.
+					</li>
+				</ul>
 			</section>
 
 			<section className='mb-8'>
 				<h2 className='text-2xl font-semibold mb-4'>6. Security and Privacy</h2>
 				<p>
-					We use encryption and fraud detection systems to secure your
-					transactions. By using our Services, you agree to our data practices
-					as outlined in the Privacy Policy.
+					PayIT is committed to protecting your data and privacy. We use
+					encryption and AI-powered fraud detection systems to secure your
+					transactions. By using our Services, you agree to our collection and
+					use of information as detailed in our [Privacy Policy]. You are
+					responsible for maintaining the security of your device and account
+					credentials.
 				</p>
 			</section>
 
 			<section className='mb-8'>
-				<h2 className='text-2xl font-semibold mb-4'>7. User Conduct</h2>
+				<h2 className='text-2xl font-semibold mb-4'>
+					7. User Conduct and Responsibilities
+				</h2>
 				<ul className='list-disc ml-6'>
-					<li>No fraudulent activities or use for illegal purposes.</li>
-					<li>Do not access other users' accounts without permission.</li>
-					<li>Provide accurate and truthful information.</li>
+					<li>
+						Engage in fraudulent activities or use the platform for money
+						laundering or other illegal activities.
+					</li>
+					<li>Violate any applicable laws or regulations.</li>
+					<li>Attempt to access or interfere with other users' accounts.</li>
+					<li>Provide false or misleading information.</li>
 				</ul>
 			</section>
 			<section className='mb-8'>
@@ -153,16 +208,7 @@ const TermsAndConditions = () => {
 					<li>Your violation of any law or regulation.</li>
 				</ul>
 			</section>
-			<section className='mb-8'>
-				<h2 className='text-2xl font-semibold mb-4'>12. Termination</h2>
-				<p>
-					We reserve the right to suspend or terminate your account and access
-					to our Services if you violate these Terms or engage in any illegal or
-					harmful activities. You may also terminate your account at any time by
-					contacting our support team. Upon termination, you remain responsible
-					for any unpaid fees or unresolved transactions.
-				</p>
-			</section>
+
 			<section className='mb-8'>
 				<h2 className='text-2xl font-semibold mb-4'>12. Termination</h2>
 				<p>
@@ -194,11 +240,9 @@ const TermsAndConditions = () => {
 				</p>
 			</section>
 			<section className='mb-8'>
-				<h2 className='text-2xl font-semibold mb-4'>
-					15. Governing Law and Jurisdiction
-				</h2>
+				<h2 className='text-2xl font-semibold mb-4'>15. Contact Information</h2>
 				<p>
-					f you have any questions or concerns about these Terms or the
+					If you have any questions or concerns about these Terms or the
 					Services, please contact us at:
 				</p>
 				<p>
@@ -207,7 +251,7 @@ const TermsAndConditions = () => {
 							<span className='font-bold'>Email: </span> support@payit.com.ng"
 						</li>
 						<li className=''>
-							<span className='font-bold'>Phone : </span>34 706 8745 (WhatsApp
+							<span className='font-bold'>Phone : </span>+234 706 8745 (WhatsApp
 							chat)
 						</li>
 						<li className=''>
