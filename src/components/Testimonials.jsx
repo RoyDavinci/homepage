@@ -48,7 +48,7 @@ const Testimonial = () => {
 			<h2 className='text-4xl font-bold text-gray-800 mb-12'>
 				What are people saying about us
 			</h2>
-			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10'>
+			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10'>
 				{testimonials.map((testimonial, index) => (
 					<div key={index} className='bg-white p-4 rounded-xl shadow-lg'>
 						<p className='mb-6 text-gray-600 italic'>"{testimonial.comment}"</p>

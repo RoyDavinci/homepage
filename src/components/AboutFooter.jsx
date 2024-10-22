@@ -12,7 +12,7 @@ import FooterImage from "../assets/Group 30915.svg";
 const AboutFooter = () => {
 	return (
 		<footer className='bg-[#0f0e0e] text-white px-6 py-8'>
-			<div className='-mt-40 mb-12'>
+			<div className='-mt-40 mb-12 flex justify-center items-center'>
 				{/* <Started /> */}
 				<img src={FooterImage} alt='' />
 			</div>
@@ -48,7 +48,7 @@ const AboutFooter = () => {
 							<FaInstagram className='text-md hover:text-pink-500 transition duration-300' />
 						</a>
 						<a
-							href='ttps://www.linkedin.com/showcase/payitng/about/?viewAsMember=true'
+							href='https://www.linkedin.com/showcase/104327264/admin/feed/following/'
 							target='_blank'
 							rel='noopener noreferrer'
 							className='p-2 rounded-full border border-[#ccc]'
@@ -75,13 +75,13 @@ const AboutFooter = () => {
 						Home
 					</a>
 					<a
-						href='#about'
+						href='/about-us'
 						className='hover:text-yellow-500 transition duration-300 text-xl '
 					>
 						About
 					</a>
 					<a
-						href='#terms'
+						href='/our-terms'
 						className='hover:text-yellow-500 transition duration-300 text-xl '
 					>
 						Terms & Conditions

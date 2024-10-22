@@ -10,14 +10,14 @@ const CenteredSectionWithGrid = () => {
 		<section className='py-16 px-4 md:px-16 bg-white'>
 			{/* Centered Content */}
 			<div className=' mx-auto  mb-16'>
-				<div className='text-center'>
+				{/* <div className='text-center'>
 					<Link
 						to='/about'
 						className='bg-[#E6EFFE] text-center mb-4 text-[#0C61F0] py-3 px-6 rounded-lg text-lg md:text-xl transition'
 					>
 						HOW IT WORKS
 					</Link>
-				</div>
+				</div> */}
 				<div className='flex  justify-center text-center items-center'>
 					<h2 className='text-3xl  max-w-4xl mt-12 md:text-4xl font-bold mb-4'>
 						Unlock Mind-Blowing Features Tailored to You. Secure, Supportive,
