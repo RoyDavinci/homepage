@@ -233,14 +233,6 @@ const data = [
 	},
 	{
 		network: "MTN",
-		category: "Monthly",
-		price: "150.00",
-		allowance: "150MB",
-		product_id: "MT002",
-		validity: "30 days",
-	},
-	{
-		network: "MTN",
 		category: "DAILY",
 		price: "350.00",
 		allowance: "Data 1GB",
